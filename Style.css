@@ -1,0 +1,149 @@
+	.centralizaCont{
+    text-align: center;
+  }
+
+  .ContainerExtra{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .ContainerExtincao{
+    background: indianred;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .cientifico{
+  	font-style: italic;
+  	font-weight: bold;
+  }
+
+  .alturaCardsCursos{
+    height: 170px;
+  }
+
+  .alturaImgCursos{
+    height: 215px;
+  }
+
+  .alturaCardsExtint{
+    height: 120px;
+  }
+
+  .marginCards{
+    margin-bottom: 20px;
+  }
+
+  .profile-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 150px; /* Tamanho máximo da imagem de perfil */
+            border: 5px solid #fff; /* Borda branca ao redor da imagem de perfil */
+            border-radius: 50%; /* Transformar a imagem de perfil em um círculo */
+          }
+      
+
+ body {
+    background-color: #f0f0f0; /* Cor de fundo original */
+  }
+
+/* Estilos personalizados */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.profile-container {
+  max-width: 100%;
+  background-color: #f8f9fa;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header img {
+  width: 100%;
+  max-height: 20%;
+  height: auto;
+}
+
+.profile-picture {
+  margin: -100px auto 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-details h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.profile-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.profile-table {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-table table {
+  width: 100%;
+}
+
+.profile-footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+.profile-footer p {
+  margin: 0;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #918f8f;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type="range"]:hover {
+  opacity: 0.5;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: darkgray; /* Cor do controle deslizante */
+  border: 2px solid black; /* Borda do controle deslizante */
+  border-radius: 50%;
+  cursor: pointer;
+}

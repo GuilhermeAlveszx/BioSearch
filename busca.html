@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BioSearch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="Galeria/Logotipo.ico">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html"><img src="Galeria/BioSearch2.png" width="200px" height="30px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Index.html">Home <i class="bi bi-house"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html">Catalogar <i class="bi bi-book"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="configuracao.html">Configurações <i class="bi bi-gear"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Usuário
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="usuariocomum.html">Usuário Comum</a></li>
+              <li><a class="dropdown-item" href="usuariobiologo.html">Usuário Biologo</a></li>
+            </li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" id="changeColorButton"> <i class="bi bi-sun"></i></a>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <a class="btn btn-outline-success" href="busca.html"><i class="bi bi-search"></i></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="container mt-3">
+
+  <div style="display: flex; flex-direction: row; align-items: center;">
+
+<div  style="width:20%;">
+  <div  class="dropdown">
+  <button style="width:98%;" class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Bioma
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Cerrado</a></li>
+    <li><a class="dropdown-item" href="#">Mata Atlântica</a></li>
+    <li><a class="dropdown-item" href="#">Amazônia</a></li>
+    <li><a class="dropdown-item" href="#">Caatinga</a></li>
+    <li><a class="dropdown-item" href="#">Pampa</a></li>
+    <li><a class="dropdown-item" href="#">Pantanal</a></li>
+    <li><a class="dropdown-item" href="#">Tundra</a></li>
+    <li><a class="dropdown-item" href="#">Floresta Tropical</a></li>
+    <li><a class="dropdown-item" href="#">Floresta Temperada</a></li>
+    <li><a class="dropdown-item" href="#">Taiga</a></li>
+    <li><a class="dropdown-item" href="#">Savana</a></li>
+    <li><a class="dropdown-item" href="#">Campos</a></li>
+    <li><a class="dropdown-item" href="#">Desertos</a></li>
+    <li><a class="dropdown-item" href="#">Rios</a></li>
+    <li><a class="dropdown-item" href="#">Lagos</a></li>
+    <li><a class="dropdown-item" href="#">Oceano</a></li>
+  </ul>
+</div>
+</div>
+
+<div style="width:20%;">
+  <div class="dropdown">
+  <button style="width:98%;" class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Tamanho
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Minúsculo</a></li>
+    <li><a class="dropdown-item" href="#">Pequeno</a></li>
+    <li><a class="dropdown-item" href="#">Médio</a></li>
+    <li><a class="dropdown-item" href="#">Grande</a></li>
+    <li><a class="dropdown-item" href="#">Enorme</a></li>
+  </ul>
+</div>
+</div>
+
+<div style="width:20%;">
+  <div class="dropdown">
+  <button style="width:98%;" class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Ambiente
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Aquático</a></li>
+    <li><a class="dropdown-item" href="#">Terrestre</a></li>
+    <li><a class="dropdown-item" href="#">Aéreo</a></li>
+  </ul>
+</div>
+</div>
+
+<div style="width:20%;">
+  <div class="dropdown">
+  <button style="width:98%;" class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Filo
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Porífera</a></li>
+    <li><a class="dropdown-item" href="#">Cnidário</a></li>
+    <li><a class="dropdown-item" href="#">Platelminto</a></li>
+    <li><a class="dropdown-item" href="#">Nematelmintos</a></li>
+    <li><a class="dropdown-item" href="#">Anelídeo</a></li>
+    <li><a class="dropdown-item" href="#">Equinoderme</a></li>
+    <li><a class="dropdown-item" href="#">Molusco</a></li>
+    <li><a class="dropdown-item" href="#">Artrópode</a></li>
+    <li><a class="dropdown-item" href="#">Cordado</a></li>
+  </ul>
+</div>
+</div>
+
+<div style="width:20%;">
+  <div class="dropdown">
+  <button style="width:98%;" class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Classe
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Calcarea</a></li>
+    <li><a class="dropdown-item" href="#">Desmospongiae</a></li>
+    <li><a class="dropdown-item" href="#">Hexactinellidae</a></li>
+    <li><a class="dropdown-item" href="#">Hydrozoa</a></li>
+    <li><a class="dropdown-item" href="#">Scyphozoa</a></li>
+    <li><a class="dropdown-item" href="#">Cubozoa</a></li>
+    <li><a class="dropdown-item" href="#">Anthozoa</a></li>
+    <li><a class="dropdown-item" href="#">Turbellaria</a></li>
+    <li><a class="dropdown-item" href="#">Trematoda</a></li>
+    <li><a class="dropdown-item" href="#">Cestoda</a></li>
+    <li><a class="dropdown-item" href="#">Monogenea</a></li>
+    <li><a class="dropdown-item" href="#">Strongylida</a></li>
+    <li><a class="dropdown-item" href="#">Ascaridia</a></li>
+    <li><a class="dropdown-item" href="#">Oxyurida</a></li>
+    <li><a class="dropdown-item" href="#">Rhabditida</a></li>
+    <li><a class="dropdown-item" href="#">Spirurida</a></li>
+    <li><a class="dropdown-item" href="#">Enoplida</a></li>
+    <li><a class="dropdown-item" href="#">Oligoquetas</a></li>
+    <li><a class="dropdown-item" href="#">Poliquetas</a></li>
+    <li><a class="dropdown-item" href="#">Hirudíneos</a></li>
+    <li><a class="dropdown-item" href="#">Aplacophora</a></li>
+    <li><a class="dropdown-item" href="#">Monoplacophora</a></li>
+    <li><a class="dropdown-item" href="#">Polyplacophora</a></li>
+    <li><a class="dropdown-item" href="#">Scaphopoda</a></li>
+    <li><a class="dropdown-item" href="#">Bivalvia</a></li>
+    <li><a class="dropdown-item" href="#">Gastropoda</a></li>
+    <li><a class="dropdown-item" href="#">Cephalopoda</a></li>
+    <li><a class="dropdown-item" href="#">Insetos</a></li>
+    <li><a class="dropdown-item" href="#">Crustáceos</a></li>
+    <li><a class="dropdown-item" href="#">Aracnídeos</a></li>
+    <li><a class="dropdown-item" href="#">Diplópodes</a></li>
+    <li><a class="dropdown-item" href="#">Quilópodes</a></li>
+    <li><a class="dropdown-item" href="#">Urocordados</a></li>
+    <li><a class="dropdown-item" href="#">Cefalocordados</a></li>
+    <li><a class="dropdown-item" href="#">Vertebrados (Craniados)</a></li>
+  </ul>
+</div>
+</div>
+
+  </div>
+</div>
+
+<div class="container mt-3">
+  
+<div class="row">
+
+<div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/harpia.jpg" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> Harpia (Gavião-Real)</h5>
+    <p class="card-text"><span class="cientifico">Harpia harpyja</span> está em risco de extinção!</p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Aves</li>
+    <li class="list-group-item">Ordem - Accipitriformes</li>
+  </ul>
+        <div class="card-body" style="display: flex; flex-direction: row;">
+<button class="btn btn-outline-danger" type="submit" style="margin-right:5px; width: 50%;">Ajudar <i class="bi bi-coin"></i></button>
+<button class="btn btn-outline-danger" type="submit" style="margin-left:5px; width: 50%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+      <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/chimpanze.png" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title">Chimpanzé-comum</h5>
+    <p class="card-text"><span class="cientifico">Pan troglodytes</span></p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Mamífero</li>
+    <li class="list-group-item">Ordem - Primatas</li>
+  </ul>
+        <div class="card-body">
+<button class="btn btn-outline-success" type="submit" style="width: 100%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+      <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/Panda.jpg" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> Panda-Gigante</h5>
+    <p class="card-text"><span class="cientifico">Ailuropoda melanoleuca</span> está em risco de extinção!</p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Mamífero</li>
+    <li class="list-group-item">Ordem - Carnivora</li>
+  </ul>
+        <div class="card-body" style="display: flex; flex-direction: row;">
+<button class="btn btn-outline-danger" type="submit" style="margin-right:5px; width: 50%;">Ajudar <i class="bi bi-coin"></i></button>
+<button class="btn btn-outline-danger" type="submit" style="margin-left:5px; width: 50%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/Polvo.png" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title">Polvo-Recife-Brasileiro</h5>
+    <p class="card-text"><span class="cientifico">Octopus insularis</span></p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Molusco</li>
+    <li class="list-group-item">Classe - Cephalopoda</li>
+    <li class="list-group-item">Ordem - Octopoda</li>
+  </ul>
+        <div class="card-body">
+<button class="btn btn-outline-success" type="submit" style="width: 100%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container mt-3">
+  
+<div class="row">
+
+<div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/harpia.jpg" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> Harpia (Gavião-Real)</h5>
+    <p class="card-text"><span class="cientifico">Harpia harpyja</span> está em risco de extinção!</p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Aves</li>
+    <li class="list-group-item">Ordem - Accipitriformes</li>
+  </ul>
+        <div class="card-body" style="display: flex; flex-direction: row;">
+<button class="btn btn-outline-danger" type="submit" style="margin-right:5px; width: 50%;">Ajudar <i class="bi bi-coin"></i></button>
+<button class="btn btn-outline-danger" type="submit" style="margin-left:5px; width: 50%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+      <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/chimpanze.png" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title">Chimpanzé-comum</h5>
+    <p class="card-text"><span class="cientifico">Pan troglodytes</span></p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Mamífero</li>
+    <li class="list-group-item">Ordem - Primatas</li>
+  </ul>
+        <div class="card-body">
+<button class="btn btn-outline-success" type="submit" style="width: 100%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+      <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/Panda.jpg" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> Panda-Gigante</h5>
+    <p class="card-text"><span class="cientifico">Ailuropoda melanoleuca</span> está em risco de extinção!</p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Mamífero</li>
+    <li class="list-group-item">Ordem - Carnivora</li>
+  </ul>
+        <div class="card-body" style="display: flex; flex-direction: row;">
+<button class="btn btn-outline-danger" type="submit" style="margin-right:5px; width: 50%;">Ajudar <i class="bi bi-coin"></i></button>
+<button class="btn btn-outline-danger" type="submit" style="margin-left:5px; width: 50%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/Polvo.png" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title">Polvo-Recife-Brasileiro</h5>
+    <p class="card-text"><span class="cientifico">Octopus insularis</span></p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Molusco</li>
+    <li class="list-group-item">Classe - Cephalopoda</li>
+    <li class="list-group-item">Ordem - Octopoda</li>
+  </ul>
+        <div class="card-body">
+<button class="btn btn-outline-success" type="submit" style="width: 100%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="card">
+
+<div class="container mt-3">
+  
+<div class="row">
+
+<div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/harpia.jpg" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> Harpia (Gavião-Real)</h5>
+    <p class="card-text"><span class="cientifico">Harpia harpyja</span> está em risco de extinção!</p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Aves</li>
+    <li class="list-group-item">Ordem - Accipitriformes</li>
+  </ul>
+        <div class="card-body" style="display: flex; flex-direction: row;">
+<button class="btn btn-outline-danger" type="submit" style="margin-right:5px; width: 50%;">Ajudar <i class="bi bi-coin"></i></button>
+<button class="btn btn-outline-danger" type="submit" style="margin-left:5px; width: 50%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+      <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/chimpanze.png" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title">Chimpanzé-comum</h5>
+    <p class="card-text"><span class="cientifico">Pan troglodytes</span></p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Mamífero</li>
+    <li class="list-group-item">Ordem - Primatas</li>
+  </ul>
+        <div class="card-body">
+<button class="btn btn-outline-success" type="submit" style="width: 100%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+      <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/Panda.jpg" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> Panda-Gigante</h5>
+    <p class="card-text"><span class="cientifico">Ailuropoda melanoleuca</span> está em risco de extinção!</p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Chordata</li>
+    <li class="list-group-item">Classe - Mamífero</li>
+    <li class="list-group-item">Ordem - Carnivora</li>
+  </ul>
+        <div class="card-body" style="display: flex; flex-direction: row;">
+<button class="btn btn-outline-danger" type="submit" style="margin-right:5px; width: 50%;">Ajudar <i class="bi bi-coin"></i></button>
+<button class="btn btn-outline-danger" type="submit" style="margin-left:5px; width: 50%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+    <div class="col-md-3 col-sm-12 marginCards">
+     <div class="card">
+  <img src="Galeria/Polvo.png" class="card-img-top alturaImgCursos" alt="...">
+      <div class="card-body alturaCardsExtint">
+    <h5 class="card-title">Polvo-Recife-Brasileiro</h5>
+    <p class="card-text"><span class="cientifico">Octopus insularis</span></p>
+      </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Filo - Molusco</li>
+    <li class="list-group-item">Classe - Cephalopoda</li>
+    <li class="list-group-item">Ordem - Octopoda</li>
+  </ul>
+        <div class="card-body">
+<button class="btn btn-outline-success" type="submit" style="width: 100%;">Observar <i class="bi bi-binoculars"></i></button>
+        </div>
+  </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="container mt-3">
+
+  <div class="row">
+    <div class="col-12"><hr></div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 centralizaCont">
+      <h6 class="display-6">Contato</h6>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-3">
+	
+<div class="row">
+	<div class="col-md col-sm-12 mt-2 centralizaCont"><i class="bi bi-telephone icones"></i> (19) 99856-4906</div>
+  <div class="col-md col-sm-12 mt-2 centralizaCont"><i class="bi bi-envelope-at icones"></i> biosearchofc@gmail.com</div>
+	<div class="col-md col-sm-12 centralizaCont">
+		<button class="btn btn-outline-success" type="submit"><i class="bi bi-twitter"></i></button>
+    <a href="https://www.instagram.com/biosearch_ofc/" target="_blank"><button class="btn btn-outline-success" type="submit"><i class="bi bi-instagram"></i></button></a>
+    <button class="btn btn-outline-success" type="submit"><i class="bi bi-youtube"></i></button>
+	</div>
+<br><br><br>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

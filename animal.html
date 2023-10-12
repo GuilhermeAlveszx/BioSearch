@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BioSearch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="Galeria/Logotipo.ico">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html"><img src="Galeria/BioSearch2.png" width="200px" height="30px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Index.html">Home <i class="bi bi-house"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html">Catalogar <i class="bi bi-book"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="configuracao.html">Configurações <i class="bi bi-gear"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Usuário
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="usuariocomum.html">Usuário Comum</a></li>
+              <li><a class="dropdown-item" href="usuariobiologo.html">Usuário Biologo</a></li>
+            </li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" id="changeColorButton"> <i class="bi bi-sun"></i></a>
+              </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <a class="btn btn-outline-success" href="busca.html"><i class="bi bi-search"></i></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+    
+  <div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Leão Africano</h1>
+        <p class="lead">O leão é o rei da selva africana, conhecido por sua majestade e poder.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Características</h2>
+            <ul>
+                <li>Tamanho médio: Machos de 2,5 metros de comprimento, fêmeas menores.</li>
+                <li>Peso médio: Machos podem pesar até 190 kg, fêmeas cerca de 130 kg.</li>
+                <li>Alimentação: Carnívoro, caça presas como zebras, gnus e búfalos.</li>
+                <li>Rugido poderoso: O rugido do leão pode ser ouvido a até 8 km de distância.</li>
+                <li>Expectativa de vida: Cerca de 10-14 anos na natureza.</li>
+            </ul>
+
+            <h2>Comportamento</h2>
+            <p>O leão é um animal social que vive em grupos chamados "prides". Cada pride é liderado
+             por um macho dominante, conhecido como "rei". As fêmeas geralmente caçam em grupo, usando estratégias 
+             coordenadas para emboscar suas presas.</p>
+        </div>
+        <div class="col-md-6">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images2.alphacoders.com/946/946032.jpg" class="d-block w-100" alt="Leão 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images5.alphacoders.com/875/875575.jpg" class="d-block w-100" alt="Leão 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images6.alphacoders.com/986/986786.jpg" class="d-block w-100" alt="Leão 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <h2 class="mt-4">Habitat</h2>
+    <p>O leão é encontrado em várias regiões da África, incluindo savanas e áreas de caça. Eles preferem áreas abertas 
+        onde podem caçar eficientemente e encontrar água com facilidade.</p>
+
+    <h2 class="mt-4">Estatísticas</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">População Total</th>
+                <th scope="col">Status de Conservação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20.000 a 25.000</td>
+                <td>Vulnerável</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="mt-4">Curiosidades</h2>
+    <div class="accordion" id="curiosidadesAccordion">
+        <div class="card">
+            <div class="card-header" id="curiosidade1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCuriosidade1" aria-expanded="true" aria-controls="collapseCuriosidade1">
+                        Leões têm papéis definidos dentro do pride.
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseCuriosidade1" class="collapse" aria-labelledby="curiosidade1" data-parent="#curiosidadesAccordion">
+                <div class="card-body">
+                    Os leões dentro do pride têm papéis bem definidos. As fêmeas são responsáveis pela caça, enquanto 
+                    os machos protegem o território e o grupo. As crias são cuidadas por todas as fêmeas do pride.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="curiosidade2">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCuriosidade2" aria-expanded="false" aria-controls="collapseCuriosidade2">
+                        A caça é frequentemente uma atividade noturna para os leões.
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseCuriosidade2" class="collapse" aria-labelledby="curiosidade2" data-parent="#curiosidadesAccordion">
+                <div class="card-body">
+                    Os leões são criaturas crepusculares e noturnas, o que lhes dá uma vantagem durante a caça, pois 
+                    suas presas frequentemente são menos vigilantes durante a noite.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="curiosidade3">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCuriosidade3" aria-expanded="false" aria-controls="collapseCuriosidade3">
+                        Leões são notáveis por sua sociabilidade.
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseCuriosidade3" class="collapse" aria-labelledby="curiosidade3" data-parent="#curiosidadesAccordion">
+                <div class="card-body">
+                    A estrutura social dos leões é única entre os grandes felinos. Eles formam laços fortes e cooperam 
+                    para sobreviver em um ambiente desafiador.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="curiosidade4">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCuriosidade4" aria-expanded="false" aria-controls="collapseCuriosidade4">
+                        Leões têm um papel crucial na ecologia de suas áreas de habitat.
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseCuriosidade4" class="collapse" aria-labelledby="curiosidade4" data-parent="#curiosidadesAccordion">
+                <div class="card-body">
+                    Como predadores de topo, os leões desempenham um papel fundamental no controle das populações de presas 
+                    e na manutenção do equilíbrio do ecossistema.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <br>
+
+  <div class="container mt-3">
+	
+    <div class="row">
+        <div class="col-md col-sm-12 mt-2 centralizaCont"><i class="bi bi-telephone icones"></i> (19) 99856-4906</div>
+      <div class="col-md col-sm-12 mt-2 centralizaCont"><i class="bi bi-envelope-at icones"></i> biosearchofc@gmail.com</div>
+        <div class="col-md col-sm-12 centralizaCont">
+            <button class="btn btn-outline-success" type="submit"><i class="bi bi-twitter"></i></button>
+        <a href="https://www.instagram.com/biosearch_ofc/" target="_blank"><button class="btn btn-outline-success" type="submit"><i class="bi bi-instagram"></i></button></a>
+        <button class="btn btn-outline-success" type="submit"><i class="bi bi-youtube"></i></button>
+        </div>
+    <br><br><br>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+  </body>
+  </html>
